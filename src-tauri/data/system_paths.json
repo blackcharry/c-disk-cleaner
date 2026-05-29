@@ -1,0 +1,48 @@
+{
+  "version": "1.0",
+  "system_dirs": [
+    "C:\\Windows\\System32",
+    "C:\\Windows\\SysWOW64",
+    "C:\\Windows\\WinSxS",
+    "C:\\Windows\\SystemResources",
+    "C:\\Windows\\Boot",
+    "C:\\Windows\\Inf",
+    "C:\\Windows\\System",
+    "C:\\Windows\\Globalization",
+    "C:\\Windows\\servicing",
+    "C:\\Windows\\SoftwareDistribution",
+    "C:\\ProgramData\\Microsoft\\Windows",
+    "C:\\$Recycle.Bin",
+    "C:\\System Volume Information",
+    "C:\\Recovery"
+  ],
+  "protected_extensions": [
+    ".sys",
+    ".drv",
+    ".efi",
+    ".cat",
+    ".mum"
+  ],
+  "protected_filenames": [
+    "ntoskrnl.exe",
+    "hal.dll",
+    "ntdll.dll",
+    "bootmgr",
+    "winload.exe",
+    "winload.efi",
+    "bcd",
+    "bootstat.dat"
+  ],
+  "temp_path_patterns": [
+    "*/AppData/Local/Temp/*",
+    "*/AppData/Local/CrashDumps/*",
+    "*/Windows/Temp/*",
+    "*/Windows/Prefetch/*",
+    "*/Windows/Logs/*"
+  ],
+  "cache_path_patterns": [
+    "*/AppData/Local/*/Cache/*",
+    "*/AppData/Local/*cache*/*",
+    "*/AppData/Roaming/*/Cache/*"
+  ]
+}

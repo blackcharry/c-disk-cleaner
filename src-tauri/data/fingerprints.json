@@ -1,0 +1,229 @@
+[
+  {
+    "name": "微信",
+    "vendor": "Tencent",
+    "icon": null,
+    "paths": [
+      "C:\\Users\\*\\AppData\\Roaming\\Tencent\\WeChat",
+      "C:\\Users\\*\\Documents\\WeChat Files"
+    ],
+    "data_dirs": [
+      "WeChat Files\\*\\FileStorage",
+      "WeChat Files\\*\\Msg",
+      "WeChat Files\\*\\Video"
+    ],
+    "cache_dirs": [
+      "WeChat Files\\*\\FileStorage\\File",
+      "WeChat Files\\*\\FileStorage\\Image"
+    ],
+    "known_cleanable": true,
+    "cleanable_notes": "聊天文件缓存，删除后聊天记录中的文件无法打开，但不影响文字聊天记录",
+    "risk": "low"
+  },
+  {
+    "name": "QQ",
+    "vendor": "Tencent",
+    "icon": null,
+    "paths": [
+      "C:\\Users\\*\\AppData\\Roaming\\Tencent\\QQ",
+      "C:\\Users\\*\\Documents\\Tencent Files"
+    ],
+    "data_dirs": [
+      "Tencent Files\\*\\Image",
+      "Tencent Files\\*\\FileRecv"
+    ],
+    "cache_dirs": [
+      "Tencent Files\\*\\Image\\Group2",
+      "Tencent Files\\*\\Image\\C2C"
+    ],
+    "known_cleanable": true,
+    "cleanable_notes": "QQ 聊天图片和文件缓存，删除后聊天中无法查看历史图片和文件",
+    "risk": "low"
+  },
+  {
+    "name": "Google Chrome",
+    "vendor": "Google",
+    "icon": null,
+    "paths": [
+      "C:\\Users\\*\\AppData\\Local\\Google\\Chrome"
+    ],
+    "data_dirs": [
+      "Chrome\\User Data\\*\\Cache",
+      "Chrome\\User Data\\*\\Code Cache"
+    ],
+    "cache_dirs": [
+      "Chrome\\User Data\\*\\Cache\\Cache_Data"
+    ],
+    "known_cleanable": true,
+    "cleanable_notes": "Chrome 浏览器缓存，可安全删除，浏览器会自动重建",
+    "risk": "low"
+  },
+  {
+    "name": "Microsoft Edge",
+    "vendor": "Microsoft",
+    "icon": null,
+    "paths": [
+      "C:\\Users\\*\\AppData\\Local\\Microsoft\\Edge"
+    ],
+    "data_dirs": [
+      "Edge\\User Data\\*\\Cache"
+    ],
+    "cache_dirs": [
+      "Edge\\User Data\\*\\Cache\\Cache_Data"
+    ],
+    "known_cleanable": true,
+    "cleanable_notes": "Edge 浏览器缓存，可安全删除",
+    "risk": "low"
+  },
+  {
+    "name": "npm",
+    "vendor": "npm Inc.",
+    "icon": null,
+    "paths": [
+      "C:\\Users\\*\\AppData\\Local\\npm-cache",
+      "C:\\Users\\*\\AppData\\Roaming\\npm-cache"
+    ],
+    "data_dirs": [],
+    "cache_dirs": [
+      "npm-cache"
+    ],
+    "known_cleanable": true,
+    "cleanable_notes": "npm 包缓存，可安全删除，下次安装时会重新下载",
+    "risk": "low"
+  },
+  {
+    "name": "pip",
+    "vendor": "Python Software Foundation",
+    "icon": null,
+    "paths": [
+      "C:\\Users\\*\\AppData\\Local\\pip\\cache",
+      "C:\\Users\\*\\AppData\\Roaming\\pip\\cache"
+    ],
+    "data_dirs": [],
+    "cache_dirs": [
+      "pip\\cache"
+    ],
+    "known_cleanable": true,
+    "cleanable_notes": "pip 下载缓存，可安全删除",
+    "risk": "low"
+  },
+  {
+    "name": "Visual Studio Code",
+    "vendor": "Microsoft",
+    "icon": null,
+    "paths": [
+      "C:\\Users\\*\\AppData\\Roaming\\Code"
+    ],
+    "data_dirs": [
+      "Code\\User\\workspaceStorage",
+      "Code\\CachedData"
+    ],
+    "cache_dirs": [
+      "Code\\CachedData",
+      "Code\\Cache"
+    ],
+    "known_cleanable": true,
+    "cleanable_notes": "VS Code 缓存和数据，缓存部分可安全删除，工作区数据谨慎",
+    "risk": "medium"
+  },
+  {
+    "name": "Steam",
+    "vendor": "Valve",
+    "icon": null,
+    "paths": [
+      "C:\\Program Files (x86)\\Steam",
+      "C:\\Users\\*\\AppData\\Local\\Steam"
+    ],
+    "data_dirs": [
+      "Steam\\steamapps\\common"
+    ],
+    "cache_dirs": [
+      "Steam\\appcache",
+      "Steam\\depotcache"
+    ],
+    "known_cleanable": false,
+    "cleanable_notes": "Steam 游戏安装目录，删除前请确认是否还需要该游戏",
+    "risk": "high"
+  },
+  {
+    "name": "Windows 更新缓存",
+    "vendor": "Microsoft",
+    "icon": null,
+    "paths": [
+      "C:\\Windows\\SoftwareDistribution\\Download"
+    ],
+    "data_dirs": [],
+    "cache_dirs": [
+      "SoftwareDistribution\\Download"
+    ],
+    "known_cleanable": true,
+    "cleanable_notes": "Windows 更新下载缓存，可安全删除（不影响已安装的更新）",
+    "risk": "low"
+  },
+  {
+    "name": "Docker Desktop",
+    "vendor": "Docker Inc.",
+    "icon": null,
+    "paths": [
+      "C:\\Users\\*\\AppData\\Local\\Docker"
+    ],
+    "data_dirs": [
+      "Docker\\wsl\\data",
+      "Docker\\wsl\\distro"
+    ],
+    "cache_dirs": [],
+    "known_cleanable": false,
+    "cleanable_notes": "Docker 镜像和容器数据，删除后需重新拉取镜像",
+    "risk": "high"
+  },
+  {
+    "name": "IntelliJ IDEA",
+    "vendor": "JetBrains",
+    "icon": null,
+    "paths": [
+      "C:\\Users\\*\\AppData\\Roaming\\JetBrains",
+      "C:\\Users\\*\\AppData\\Local\\JetBrains"
+    ],
+    "data_dirs": [],
+    "cache_dirs": [
+      "JetBrains\\*\\caches",
+      "JetBrains\\*\\log"
+    ],
+    "known_cleanable": true,
+    "cleanable_notes": "JetBrains IDE 缓存和日志，可安全删除，下次启动时重建",
+    "risk": "low"
+  },
+  {
+    "name": "WPS Office",
+    "vendor": "Kingsoft",
+    "icon": null,
+    "paths": [
+      "C:\\Users\\*\\AppData\\Roaming\\Kingsoft"
+    ],
+    "data_dirs": [
+      "Kingsoft\\wps\\addons"
+    ],
+    "cache_dirs": [
+      "Kingsoft\\backup"
+    ],
+    "known_cleanable": true,
+    "cleanable_notes": "WPS 备份和缓存文件，可安全删除",
+    "risk": "low"
+  },
+  {
+    "name": "钉钉",
+    "vendor": "Alibaba",
+    "icon": null,
+    "paths": [
+      "C:\\Users\\*\\AppData\\Roaming\\DingTalk",
+      "C:\\Users\\*\\Documents\\DingTalk"
+    ],
+    "data_dirs": [
+      "DingTalk\\*\\FileRecv"
+    ],
+    "cache_dirs": [],
+    "known_cleanable": true,
+    "cleanable_notes": "钉钉接收文件和缓存，可安全删除",
+    "risk": "low"
+  }
+]

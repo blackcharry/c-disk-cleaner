@@ -1,0 +1,28 @@
+[package]
+name = "c-disk-cleaner"
+version = "0.1.0"
+description = "C盘文件管家 — 纯信息展示工具，告诉你C盘里有什么、能不能删"
+authors = ["blackcharry"]
+edition = "2021"
+
+[lib]
+name = "c_disk_cleaner"
+crate-type = ["lib", "cdylib", "staticlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[target.'cfg(target_os = "windows")'.dependencies]
+winreg = "0.52"
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-shell = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = "0.4"
+rayon = "1.8"
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
