@@ -10,7 +10,6 @@ use crate::scanner::walker::WalkScanner;
 use crate::analyzer::system::SystemFileDetector;
 use crate::analyzer::fingerprint::FingerprintEngine;
 use crate::analyzer::risk::RiskAssessor;
-use crate::registry::uninstalled::ResidueEntry;
 
 /// 启动扫描
 #[tauri::command]
